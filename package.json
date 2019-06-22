@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "darkmodejs-demo",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Demo app for darkmodejs",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Luke Whitehouse <luke@lukewhitehouse.co.uk>",
   "dependencies": {
     "gatsby": "^2.10.0",
     "gatsby-image": "^2.2.1",
@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/assortment/darkmodejs-demo"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/assortment/darkmodejs-demo/issues"
   }
 }

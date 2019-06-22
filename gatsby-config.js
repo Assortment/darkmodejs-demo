@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Demo app for darkmodejs`,
+    description: `A demonstration of how you can use the @assortment/darkmodejs npm package to theme your website based on a user's Operating System theme, thanks to the matchMedia API and prefers-color-scheme media queries.`,
+    author: `@assortmentio`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
