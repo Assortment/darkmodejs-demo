@@ -7,9 +7,10 @@ import darkmode from "@assortment/darkmodejs"
 import globalStyles from "../globalStyles"
 import themes from "../themes"
 import SEO from "../components/Seo"
+import { Heading, Anchor } from "../components/Elements"
 import { Container } from "../components/Container"
 import { Content } from "../components/Content"
-import { Heading, Anchor } from "../components/Elements"
+import { ThemeIndicator } from "../components/ThemeIndicator"
 
 const IndexPage = () => {
   const [theme, setTheme] = useState("light")
@@ -32,10 +33,7 @@ const IndexPage = () => {
     }
   }
 
-  useEffect(() => {
-    darkmode({ onChange })
-    setTheme("no-preference")
-  }, [])
+  useEffect(() => darkmode({ onChange }), [])
 
   return (
     <ThemeProvider theme={themes[theme]}>
@@ -72,6 +70,7 @@ const IndexPage = () => {
           >
             Star
           </GitHubButton>
+          <ThemeIndicator>Current theme: "{theme}"</ThemeIndicator>
         </Content>
       </Container>
     </ThemeProvider>

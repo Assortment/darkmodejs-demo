@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 
 export const Content = styled.div`
+  position: relative;
   max-width: 700px;
   width: 95%;
   padding: 2rem;
