@@ -6,7 +6,7 @@ import darkmode from "@assortment/darkmodejs"
 
 import globalStyles from "../globalStyles"
 import themes from "../themes"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 import { Heading, Anchor } from "../components/Elements"
 import { Container } from "../components/Container"
 import { Content } from "../components/Content"
