@@ -9,7 +9,7 @@ import themes from "../themes"
 import SEO from "../components/Seo"
 import { Container } from "../components/Container"
 import { Content } from "../components/Content"
-import { Heading, StyledLink } from "../components/Elements"
+import { Heading, Anchor } from "../components/Elements"
 
 const IndexPage = () => {
   const [theme, setTheme] = useState("light")
@@ -52,18 +52,18 @@ const IndexPage = () => {
           </p>
           <p>
             This example has been created with Emotion and the{" "}
-            <StyledLink to="https://emotion.sh/docs/emotion-theming">
+            <Anchor href="https://emotion.sh/docs/emotion-theming">
               emotion-theming
-            </StyledLink>{" "}
+            </Anchor>{" "}
             package. You can view the code for this on Github, or look at the
             darkmodejs package with the links below
           </p>
-          <StyledLink to="https://www.npmjs.com/package/@assortment/darkmodejs">
+          <Anchor href="https://www.npmjs.com/package/@assortment/darkmodejs">
             <img
               src="https://img.shields.io/npm/v/@assortment/darkmodejs.svg"
               alt="NPM: @assortment/darkmodejs"
             />
-          </StyledLink>
+          </Anchor>
           &nbsp;&nbsp;
           <GitHubButton
             href="https://github.com/assortment/darkmodejs"
