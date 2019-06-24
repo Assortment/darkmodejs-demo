@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Luke Whitehouse <luke@lukewhitehouse.co.uk>",
   "dependencies": {
+    "@assortment/darkmodejs": "^0.0.1",
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
     "emotion-theming": "^10.0.10",

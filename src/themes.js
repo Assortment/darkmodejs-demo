@@ -19,4 +19,24 @@ export default {
       contentArea: "#16141f",
     },
   },
+  "no-preference": {
+    text: {
+      heading: "#3e87f9",
+      body: "#81b2ff",
+    },
+    background: {
+      backdrop: "#f9fbfd",
+      contentArea: "#e8f1ff",
+    },
+  },
+  "no-support": {
+    text: {
+      heading: "#e64848",
+      body: "#E68B8B",
+    },
+    background: {
+      backdrop: "#FDF9F9",
+      contentArea: "#ffe8e8",
+    },
+  },
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Global } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 import GitHubButton from "react-github-btn"
+import darkmode from "@assortment/darkmodejs"
 
 import globalStyles from "../globalStyles"
 import themes from "../themes"
@@ -13,8 +14,27 @@ import { Heading, StyledLink } from "../components/Elements"
 const IndexPage = () => {
   const [theme, setTheme] = useState("light")
 
+  const onChange = (activeTheme, themes) => {
+    switch (activeTheme) {
+      case themes.DARK:
+        setTheme(themes.DARK)
+        break
+      case themes.LIGHT:
+        setTheme(themes.LIGHT)
+        break
+      case themes.NO_PREF:
+        setTheme(themes.NO_PREF)
+        break
+      case themes.NO_SUPP:
+      default:
+        setTheme(themes.NO_SUPP)
+        break
+    }
+  }
+
   useEffect(() => {
-    setTheme("dark")
+    darkmode({ onChange })
+    setTheme("no-preference")
   }, [])
 
   return (
