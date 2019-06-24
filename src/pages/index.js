@@ -3,31 +3,12 @@ import { Global } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 import GitHubButton from "react-github-btn"
 
-import globalStyles from "../styles/globalStyles"
-import SEO from "../components/seo"
-import { Container, Content, Heading, StyledLink } from "../styles/styles"
-
-const lightTheme = {
-  text: {
-    heading: "#000000",
-    body: "#777777",
-  },
-  background: {
-    backdrop: "#F7F7F7",
-    contentArea: "#EEEEEE",
-  },
-}
-
-const darkTheme = {
-  text: {
-    heading: "#FFF",
-    body: "#c2c2c2",
-  },
-  background: {
-    backdrop: "#100e17",
-    contentArea: "#16141f",
-  },
-}
+import globalStyles from "../globalStyles"
+import { lightTheme, darkTheme } from "../themes"
+import SEO from "../components/Seo"
+import { Container } from "../components/Container"
+import { Content } from "../components/Content"
+import { Heading, StyledLink } from "../components/Elements"
 
 const IndexPage = () => (
   <ThemeProvider theme={lightTheme}>
