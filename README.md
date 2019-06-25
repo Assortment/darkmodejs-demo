@@ -11,7 +11,10 @@
 
 A demonstration of how you can use the `@assortment/darkmodejs` NPM package to theme your website based on a user's Operating System theme, thanks to the `matchMedia` API and `prefers-color-scheme` media queries.
 
-For more information, head over to the [darkmodejs](https://github.com/Assortment/darkmodejs) Github page.
+This example has been created with Emotion and the `emotion-theming` package. Take a look at the darkmodejs package with the links below:
+
+- 💻 View the code on Github: [assortment/darkmodejs](https://github.com/Assortment/darkmodejs)
+- 📦 View the package on NPM: [@assortmentio/darkmodejs](https://www.npmjs.com/package/@assortment/darkmodejs)
 
 ## ✍️ License
 
