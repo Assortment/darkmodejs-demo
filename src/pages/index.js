@@ -53,8 +53,11 @@ const IndexPage = () => {
             <Anchor href="https://emotion.sh/docs/emotion-theming">
               emotion-theming
             </Anchor>{" "}
-            package. You can view the code for this on Github, or look at the
-            darkmodejs package with the links below
+            package. You can{" "}
+            <Anchor href="https://github.com/Assortment/darkmodejs-demo">
+              view the code for this
+            </Anchor>{" "}
+            on Github, or look at the darkmodejs package with the links below:
           </p>
           <Anchor href="https://www.npmjs.com/package/@assortment/darkmodejs">
             <img
