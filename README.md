@@ -7,6 +7,8 @@
 
 </div>
 
+View the deployed demo on Netlify – https://darkmodejs-demo.netlify.com/
+
 ---
 
 A demonstration of how you can use the `@assortment/darkmodejs` NPM package to theme your website based on a user's Operating System theme, thanks to the `matchMedia` API and `prefers-color-scheme` media queries.
