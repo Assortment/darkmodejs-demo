@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@assortment/darkmodejs@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@assortment/darkmodejs/-/darkmodejs-0.0.1.tgz#36d56e18089042790da14834f8aa685a977fa0d4"
-  integrity sha512-Ot58lW+COfKdIdEZ4jhotiGuH5JnRc2ZvHIK0tQynDOr1GyOY8DAHHWLfnsftrJZHb5rhAAM7/gKVLwnMzDlzA==
+"@assortment/darkmodejs@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@assortment/darkmodejs/-/darkmodejs-1.0.1.tgz#c944bc954093541bacd69586b8ebfe7f641e24ba"
+  integrity sha512-P5dh+15omuDj9NETF3siaTIZi4EVh/EEPwnJL3/vLbbilvKV9SP801RncofY7tQKizskHIc1Thej64XO7Hj9bA==
 
 "@babel/code-frame@^7.0.0":
   version "7.0.0"

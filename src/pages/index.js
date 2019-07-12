@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react"
+import { Link } from "gatsby"
 import { Global } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 import GitHubButton from "react-github-btn"
-import darkmode from "@assortment/darkmodejs"
+import darkmodejs from "@assortment/darkmodejs"
 
 import globalStyles from "../globalStyles"
 import themes from "../themes"
@@ -19,21 +20,31 @@ const IndexPage = () => {
     switch (activeTheme) {
       case themes.DARK:
         setTheme(themes.DARK)
+        console.log(`current theme: ${themes.DARK}`)
         break
       case themes.LIGHT:
         setTheme(themes.LIGHT)
+        console.log(`current theme: ${themes.LIGHT}`)
         break
       case themes.NO_PREF:
         setTheme(themes.NO_PREF)
+        console.log(`current theme: ${themes.NO_PREF}`)
         break
       case themes.NO_SUPP:
       default:
         setTheme(themes.NO_SUPP)
+        console.log(`current theme: ${themes.NO_SUPP}`)
         break
     }
   }
 
-  useEffect(() => darkmode({ onChange }), [])
+  useEffect(() => {
+    const dmjs = darkmodejs({ onChange });
+    
+    return () => {
+      dmjs.removeListeners();
+    }
+  }, []);
 
   return (
     <ThemeProvider theme={themes[theme]}>
@@ -73,6 +84,7 @@ const IndexPage = () => {
           >
             Star
           </GitHubButton>
+          <p>Click here to try out <Anchor as={Link} to="/without-listeners">removing the listeners</Anchor></p>
           <ThemeIndicator>Current theme: "{theme}"</ThemeIndicator>
         </Content>
       </Container>

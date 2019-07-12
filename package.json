@@ -2,10 +2,10 @@
   "name": "darkmodejs-demo",
   "private": true,
   "description": "Demo app for darkmodejs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Luke Whitehouse <luke@lukewhitehouse.co.uk>",
   "dependencies": {
-    "@assortment/darkmodejs": "^0.0.1",
+    "@assortment/darkmodejs": "^1.0.1",
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
     "emotion-theming": "^10.0.10",
